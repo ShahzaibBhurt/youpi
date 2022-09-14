@@ -1,0 +1,410 @@
+@font-face {
+  font-family: Archivo-bold;
+  src: url(../fonts/Archivo-Bold.ttf);
+}
+@font-face {
+  font-family: Archivo;
+  src: url(../fonts/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: Archivo-Medium;
+  src: url(../fonts/AArchivo-Medium.ttf);
+}
+@font-face {
+  font-family: Archivo-SemiBold;
+  src: url(../fonts/Archivo-SemiBold.ttf);
+}
+body, p{
+    font-family: Archivo-SemiBold;
+    font-style: normal;
+}
+.regular-text{
+    font-family: Archivo !important;
+}
+h1{
+    letter-spacing: -4px;
+}
+h1, h6{
+    font-family: Archivo-bold;
+    font-style: normal;
+}
+.btn-info{
+    background: #5865F2;
+    color:white;
+}
+.navbar{
+    border-bottom: 2px solid gainsboro;
+}
+.nav-link{
+    color: black !important;
+    padding: 1rem !important;
+}
+.discord-btn{
+    border-radius: 8px;
+    border: 0;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+.discord-btn .fa-brands{
+    font-size: 19px;
+    margin-right: 5px;
+}
+.arrow{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+.header-text{
+    font-family: Archivo-bold;
+    font-style: normal;
+    font-size: 61px;
+}
+.header-text .underline{
+    position: absolute;
+    margin-left: 226px;
+    width: 285px;
+    margin-top: 53px
+}
+.header-info{
+    position: absolute;
+    width: 270px;
+    text-align: left;
+    height: 440px;
+    margin-left: 60px;
+}
+.center-div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-info p{
+    font-size: 12px;
+}
+.app-store-btn{
+    border: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+.section-2{
+    border-radius: 30px;
+    background-color: black;
+    background-image: url(../img/rings.png);
+    background-size: 64%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.section-2 .info{
+    padding-left: 90px;
+    padding-right: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.section-2 p{
+    font-size: 12px;
+    color: white;
+}
+.section-2 span{
+    color: yellow;
+}
+.section-3{
+    border-radius: 30px;
+    background-image: url(../img/Cover.png);
+    background-size: cover;
+    padding: 1rem;
+}
+.section-3 .inner{
+    border-radius: 30px;
+    background: linear-gradient(112.2deg, #FFFFFF 0%, #F3F3F3 100%);
+    padding-top: 1rem;
+}
+.section-3 .info{
+    position: absolute;
+    height: 600px;
+    width: 955px;
+    text-align: end;
+}
+.section-3 .info div{
+    position: relative;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: -webkit-right;
+}
+.section-3 .info div h1{
+    font-size: 77px;
+}
+.section-3 .info div img{
+    width: 76px;
+    margin-top: -10px;
+}
+.section-3 .info div p{
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+footer{
+    margin-top: 4rem;
+    border-top: 2px solid gainsboro;
+    padding: 30px 0px;
+}
+footer .row{
+    justify-content: space-between;
+}
+footer img{
+    width: 35%;
+    display: block;
+    margin-bottom: 15px;
+}
+footer p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: gray;
+}
+footer ul{
+    list-style: none;
+    font-family: Archivo;
+    font-size: 15px;
+}
+footer ul li{
+    padding: 4px 0px;
+}
+
+/* side menu start*/
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem;
+}
+.navbar-toggler-icon {
+    width: 2.5rem;
+}
+
+.huddle-prg{
+    width: 340px;
+    margin: auto;
+}
+.invite-box{
+    width: 70%;
+    margin-top: 3rem;
+}
+.invite-box input{
+    width: -webkit-fill-available;
+    padding: 15px 13px;
+    font-size: 15.8px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.invite-box button{
+    position: absolute;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin-top: 0.5rem;
+    margin-left: -166px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background-color: #FF3C5F;
+    color: white;
+}
+.vibey-prg{
+    font-size: 15px;
+    color: white;
+    width: 400px;
+    margin:auto;
+}
+.vibey-prg span{
+    color: yellow;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ff3c5f !important;
+}
+.nav-item > ul > li > a, footer ul li a{
+    color: black;
+    text-decoration: none;
+    display: contents;
+}
+.nav-item > ul > li > a:hover, footer ul li a:hover{
+    color: #FF3C5F;
+}
+/* side menu End*/
+@media (max-width: 1200px){
+    .section-3 .info {
+        width: 877px;
+    }
+    .section-3 .info div h1 {
+        font-size: 65px;
+    }
+    .section-3 .info div p {
+        width: 47%;
+    }
+}
+@media (max-width: 991px){
+    .section-3 .inner img{
+        width: 60%;
+    }
+    .section-3 .info {
+        width: 644px;
+        height: 410px;
+    }
+    .section-3 .info div h1 {
+        font-size: 50px;
+    }
+    .section-3 .info div img {
+        width: 50px;
+    }
+    .section-3 .info div p {
+        width: 48%;
+    }
+    .header-info {
+        height: 335px;
+    }
+}
+@media (max-width: 768px){
+    .header-text .underline{
+        margin-left: 182px;
+        margin-top: 44px;
+        width: 232px;
+    }
+    .section-2 .info {
+        padding: 3rem;
+    }
+    .gradient-box{
+        background: linear-gradient(182.89deg, #101010 25.66%, rgba(16, 16, 16, 0) 97.77%);
+        border-radius: 32px;
+    }
+    .section-2{
+        background-image: url(../img/phone-rings.png);
+        background-size: 85%;
+        background-position: 100% 55px;
+    }
+    .section-3 .info {
+        position: unset;
+        width: 100%;
+        height: auto;
+    }
+    .section-3 .info div {
+        position: relative;
+        top: unset;
+        right: 0;
+        transform: translateY(0%);
+        text-align: center;
+    }
+    .section-3 .info div p {
+        width: 100%;
+        text-align: center;
+    }
+    .img-pc{
+        display: none;
+    }
+    .img-mob{
+        display: block !important;
+        width: 100% !important;
+    }
+    .header-info {
+        width: 35%;
+        text-align: left;
+        height: 445px;
+        margin-left: 18px;
+    }
+    .header-text{
+        font-size: 51px;
+    }
+    .header-info .center-div h1{
+        font-size: 2.4rem;
+    }
+    .discord-btn-div{
+        display: none !important;
+    }
+    footer ul{
+        padding-left: 0rem;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 6px;
+        background-color: white;
+    }
+    .invite-box{
+        width: 100%;
+    }
+    .sidenav a:hover{
+        color: #f1f1f1;
+    }
+
+    .sidenav .container-fluid{
+        border-bottom: 2px solid gainsboro;
+        width: 93%;
+    }
+    .sidenav .closebtn {
+        font-family: Archivo-bold;
+        display: block !important;
+        font-size: 20px;
+        padding: 18px 10px;
+    }
+    .navbar-nav{
+        padding: 15px;
+    }
+    .arrow-mob{
+        position: absolute;
+        right: 0;
+        margin-top: 60px;
+        transform: rotate(55deg);
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .navbar-nav .nav-item ul{
+        display: block !important;
+        list-style: none;
+    }
+    .navbar-nav .nav-item ul li{
+        font-size: 18px;
+    }
+    .square{
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+    }
+}
+@media (max-width: 575px){
+    .invite-box button{
+        right: 33px;
+    }
+}
+@media (max-width: 435px){
+    .header-text .underline{
+        margin-left: -29px;
+        margin-top: 104px;
+        width: 236px;
+    }
+    .header-info {
+        height: 330px;
+    }
+    .huddle-prg{
+        width: 100%;
+    }
+}
+@media (max-width: 440px){
+    .vibey-prg{
+        width: 100%;
+    }
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1040px;
+    }
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1040px;
+    }
+}

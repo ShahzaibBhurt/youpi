@@ -1,0 +1,20 @@
+.navbar-nav li a{
+    color: white !important;
+}
+body{
+    background-color: black;
+}
+.invite-btn{
+    background-color: #FFEE32 !important;
+    color: black !important;
+}
+.invite-input{
+    border-color: #FFEE32 !important;
+    color: white !important;
+}
+.navbar-light .navbar-toggler-icon, .btn-close{
+    filter: invert(2);
+}
+.sidenav{
+    background-color: black;
+}

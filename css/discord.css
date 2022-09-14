@@ -1,0 +1,21 @@
+h2{
+    font-family: Archivo-bold;
+}
+.header-text1{
+    font-family: Archivo-bold;
+    font-style: normal;
+    font-size: 70px;
+}
+.w-70{
+    width: 85%;
+    margin-inline-start: auto;
+}
+@media (max-width: 430px){
+    .w-70{
+        width: 100%;
+    }
+    .row.m-5{
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+}
