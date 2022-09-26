@@ -1,0 +1,39 @@
+@font-face {
+  font-family: hind-light;
+  src: url(../fonts/hind-light.otf);
+}
+@font-face {
+  font-family: hind-medium;
+  src: url(../fonts/hind-medium.otf);
+}
+@font-face {
+  font-family: hind-regular;
+  src: url(../fonts/hind-regular.otf);
+}
+.header-text img{
+    margin-left: 4px;
+    width: 53px;
+    margin-top: -11px;
+}
+.header{
+    background-image: url(../img/meta.dance.png);
+    background-size: cover;
+}
+.invite-box button {
+    background-image: url(../img/Cover2.png);
+    background-size: cover;
+    color: white;
+}
+@media (max-width: 768px){
+    .header{
+        background-image: url(../img/meta.dance-small.png);
+    }
+    .header .Qr-code{
+        width: 70%;
+    }
+}
+@media (max-width: 575px){
+    .invite-box button {
+        right: 20px;
+    }
+}

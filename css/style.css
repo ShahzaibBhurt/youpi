@@ -3,24 +3,37 @@
   src: url(../fonts/Archivo-Bold.ttf);
 }
 @font-face {
+  font-family: hind-regular;
+  src: url(../fonts/hind-regular.otf);
+}
+@font-face {
+  font-family: hind-light;
+  src: url(../fonts/hind-light.otf);
+}
+@font-face {
   font-family: Archivo;
   src: url(../fonts/Archivo-Regular.ttf);
 }
 @font-face {
   font-family: Archivo-Medium;
-  src: url(../fonts/AArchivo-Medium.ttf);
+  src: url(../fonts/Archivo-Medium.ttf);
 }
 @font-face {
   font-family: Archivo-SemiBold;
   src: url(../fonts/Archivo-SemiBold.ttf);
 }
-body, p{
+body{
     font-family: Archivo-SemiBold;
     font-style: normal;
 }
+p{
+    font-family: hind-light;
+}
+/*
 .regular-text{
     font-family: Archivo !important;
 }
+*/
 h1{
     letter-spacing: -4px;
 }
@@ -32,12 +45,21 @@ h1, h6{
     background: #5865F2;
     color:white;
 }
+.btn-info:hover{
+    background: #5865F2;
+    color:black;
+}
 .navbar{
     border-bottom: 2px solid gainsboro;
 }
 .nav-link{
     color: black !important;
     padding: 1rem !important;
+}
+.navbar-brand h1{
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    margin-left: -5px !important;
 }
 .discord-btn{
     border-radius: 8px;
@@ -65,6 +87,7 @@ h1, h6{
     width: 285px;
     margin-top: 53px
 }
+/*
 .header-info{
     position: absolute;
     width: 270px;
@@ -77,19 +100,25 @@ h1, h6{
     top: 50%;
     transform: translateY(-50%);
 }
+*/
 .header-info p{
-    font-size: 12px;
+    font-size: 14px;
 }
 .app-store-btn{
     border: 0;
     padding: 0;
     border-radius: 8px;
 }
+.sec-1{
+    background-image: url(../img/bg-img.png);
+    background-size: 100% 100%;
+    margin-bottom: 6rem;
+}
 .section-2{
     border-radius: 30px;
     background-color: black;
     background-image: url(../img/rings.png);
-    background-size: 64%;
+    background-size: 67%;
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -100,8 +129,9 @@ h1, h6{
     padding-bottom: 3rem;
 }
 .section-2 p{
-    font-size: 12px;
+    font-size: 14px;
     color: white;
+    line-height: 1.1;
 }
 .section-2 span{
     color: yellow;
@@ -117,6 +147,10 @@ h1, h6{
     background: linear-gradient(112.2deg, #FFFFFF 0%, #F3F3F3 100%);
     padding-top: 1rem;
 }
+.section-3 .inner .mobiles{
+    position: absolute;
+    margin: 4rem;
+}
 .section-3 .info{
     position: absolute;
     height: 600px;
@@ -131,16 +165,15 @@ h1, h6{
     text-align: -webkit-right;
 }
 .section-3 .info div h1{
-    font-size: 77px;
+    font-size: 57px;
+    margin-right: 70px;
 }
-.section-3 .info div img{
-    width: 76px;
-    margin-top: -10px;
+.section-3 .info div .ball{
+    margin-left: 4px;
+    margin-top: -12px;
 }
 .section-3 .info div p{
     width: 50%;
-    text-align: left;
-    font-size: 14px;
     letter-spacing: .5px;
 }
 footer{
@@ -151,23 +184,30 @@ footer{
 footer .row{
     justify-content: space-between;
 }
+/*
 footer img{
     width: 35%;
     display: block;
     margin-bottom: 15px;
 }
+*/
 footer p{
     font-size: 16px;
     letter-spacing: .5px;
-    color: gray;
+}
+footer .navbar-brand h1{
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin-left: -5px !important;
+    color: black;
 }
 footer ul{
+    font-family: hind-light;
     list-style: none;
-    font-family: Archivo;
-    font-size: 15px;
+    font-size: 16px;
 }
 footer ul li{
-    padding: 4px 0px;
+    padding: 6px 0px;
 }
 
 /* side menu start*/
@@ -198,19 +238,20 @@ footer ul li{
 }
 
 .invite-box button{
+    font-family: Archivo-Bold;
     position: absolute;
     border-radius: 8px;
-    padding: 10px 25px;
+    padding: 8px 25px;
     margin-top: 0.5rem;
-    margin-left: -166px;
-    font-size: 14px;
+    margin-left: -184px;
+    font-size: 16px;
     font-weight: 600;
     border: none;
-    background-color: #FF3C5F;
+    background-color: #CB444A;
     color: white;
 }
 .vibey-prg{
-    font-size: 15px;
+    font-size: 16px;
     color: white;
     width: 400px;
     margin:auto;
@@ -219,7 +260,7 @@ footer ul li{
     color: yellow;
 }
 .navbar-light .navbar-nav .nav-link.active{
-    color: #ff3c5f !important;
+    color: #CB444A !important;
 }
 .nav-item > ul > li > a, footer ul li a{
     color: black;
@@ -227,7 +268,7 @@ footer ul li{
     display: contents;
 }
 .nav-item > ul > li > a:hover, footer ul li a:hover{
-    color: #FF3C5F;
+    color: #CB444A;
 }
 /* side menu End*/
 @media (max-width: 1200px){
@@ -235,7 +276,7 @@ footer ul li{
         width: 877px;
     }
     .section-3 .info div h1 {
-        font-size: 65px;
+        margin-right: 47px;
     }
     .section-3 .info div p {
         width: 47%;
@@ -244,6 +285,10 @@ footer ul li{
 @media (max-width: 991px){
     .section-3 .inner img{
         width: 60%;
+    }
+    .section-3 .inner .mobiles{
+        width: 220px;
+        margin: 4rem 2rem;
     }
     .section-3 .info {
         width: 644px;
@@ -256,20 +301,43 @@ footer ul li{
         width: 50px;
     }
     .section-3 .info div p {
-        width: 48%;
+        width: 54%;
     }
+/*
     .header-info {
         height: 335px;
     }
+*/
+}
+@media (min-width: 768px){
+    .sec-1 .col-md-5{
+        width: 37.666667%;
+    }
+    .sec-1 .col-md-5 div{
+        margin-left: 3rem;
+    }
 }
 @media (max-width: 768px){
+    .sec-1{
+        background-image: url(../img/bg2.png);
+    }
     .header-text .underline{
         margin-left: 182px;
         margin-top: 44px;
         width: 232px;
     }
     .section-2 .info {
+        padding: 0rem;
+    }
+    .section-2 .gradient-box {
         padding: 3rem;
+        width: 93%;
+        margin: auto;
+        padding-bottom: 0rem;
+    }
+    .section-2 .imgs-sec{
+        padding: 3rem;
+        padding-top: 0rem;
     }
     .gradient-box{
         background: linear-gradient(182.89deg, #101010 25.66%, rgba(16, 16, 16, 0) 97.77%);
@@ -280,10 +348,19 @@ footer ul li{
         background-size: 85%;
         background-position: 100% 55px;
     }
+    .section-2 .row{
+        padding: 0rem !important;
+    }
     .section-3 .info {
         position: unset;
         width: 100%;
         height: auto;
+        background-image: url(../img/DRIP_19.png);
+        background-size: cover;
+    }
+    .section-3 .inner .header-text{
+        margin-right: 0;
+        margin-top: 2rem;
     }
     .section-3 .info div {
         position: relative;
@@ -303,16 +380,22 @@ footer ul li{
         display: block !important;
         width: 100% !important;
     }
+    .huddle-phone{
+        text-align: end;
+        padding-right: 30px;
+    }
+/*
     .header-info {
         width: 35%;
         text-align: left;
         height: 445px;
         margin-left: 18px;
     }
+*/
     .header-text{
         font-size: 51px;
     }
-    .header-info .center-div h1{
+    .header-info h1{
         font-size: 2.4rem;
     }
     .discord-btn-div{
@@ -386,9 +469,11 @@ footer ul li{
         margin-top: 104px;
         width: 236px;
     }
+/*
     .header-info {
         height: 330px;
     }
+*/
     .huddle-prg{
         width: 100%;
     }
